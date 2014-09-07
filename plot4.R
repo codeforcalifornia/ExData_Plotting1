@@ -16,7 +16,7 @@ with(pwrdata, plot(datetime, Voltage, type='l', ylab='Voltage', xlab='datetime')
 
 
 # Plot 3
-with(pwrdata, plot(c(datetime,datetime,datetime), c(Sub_metering_1, Sub_metering_2, Sub_metering_3), pch='.', type='l', ylab='Energy sub metering', xlab=''))
+with(pwrdata, plot(c(datetime,datetime), c(Sub_metering_1, Sub_metering_2), pch='.', type='l', ylab='Energy sub metering', xlab=''))
 with(pwrdata, lines(datetime, Sub_metering_1, col='black'))
 with(pwrdata, lines(datetime, Sub_metering_2, col='red'))
 with(pwrdata, lines(datetime, Sub_metering_3, col='blue'))
